@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.grid .container {
+  position: relative;
+  width: 100% !important;
+  background-color: #f1f1f1;
+  height: 1500px;
+}
+
+.grid .container > div {
+  position: absolute;
+  height: 150px;
+  width: 16.6666%;
+  margin: 0;
+}
+
+.grid .container > div[data-type="chart"] {
+  height: 450px;
+  width: 83.3%;
+}
+
+.grid .container > div[data-type="chart"] .content {
+  background: white;
+  border: 1px solid grey;
+}
+
+.grid .container > .stamp {
+  cursor: default;
+}
+
+.widget {
+  padding: 5px;
+  text-align: center;
+}
+
+.content {
+  background-color: #a7a7a7;
+  border: 1px solid black;
+  height: 100%;
+}
+
+.alert-wrapper .widget .content {
+  background-color: #d2d2d2;
+  border-color: #848484;
+}
+
+.alert-wrapper .container {
+  max-height: 300px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.alert-wrapper .container > div {
+  height: 100px;
+}
